@@ -11,7 +11,7 @@ cat readme // 获取密码 result :boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
 ## 第一关
 
-question 读取虚线文件内的密码
+读取虚线文件内的密码
 
 cat ./-
 
