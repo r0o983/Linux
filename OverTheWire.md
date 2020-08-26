@@ -92,3 +92,11 @@ result : truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 code : cat data.txt | base64 -d
 
 result : IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+## 第十一关
+
+踩坑：只纠结于题面，要求大小写进行反转，忽略了后续的提示。实际上只需要使用rot13解密即可（浪费一天时间，我艹。
+
+code : cat date.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+result : 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
