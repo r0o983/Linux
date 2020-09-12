@@ -100,3 +100,12 @@ result : IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 code : cat date.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 result : 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+## 第十二关
+
+不解释。。。
+
+result : 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+## 第十三关
+
