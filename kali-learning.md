@@ -52,7 +52,6 @@ netstat -atunlp,各参数含义如下:
 -a 显示所有连接的端口
 ```
 
-```
 正向连接与反向连接
 a主机为windows
 b主机为linux
@@ -62,3 +61,4 @@ b:nc -lp 8888 在b主机上发起一个监听端口等待a主机的连接  ----�
 b:nc -lp 8888 -c bash 使用-c参数将bash丢给连接方  -----a主机获得b主机的shell执行
 ```
 
+host -t ns megacorpoe.com 其中-t后面的参数可以修改为任意类型参数，比如mx，
