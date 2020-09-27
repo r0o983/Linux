@@ -109,3 +109,31 @@ result : 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
 ## 第十三关
 
+要求使用私钥来进行登录服务器
+
+code：ssh bandit14@localhopst -i sshkey.private
+
+cat  /etc/bandit_pass/bandit14
+
+Result：4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+# 第十四关
+
+要求将当前的密钥发送到30000端口上并找到在端口30000上存在的密码
+
+code：echo '4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e' |nc localhost 30000
+
+or code : nc localhost 30000 
+
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+result ：BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+# 第十五关
+
+通过使用ssl加密将当前级别的密码提交到localhost上的30001端口上并获得密码（感觉跟14关没什么区别，只是传送的字符串有所改变
+
+code：echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" | openssl s_client -connect localhost:30001 -ign_eof
+
+Result :cluFn7wTiGryunymYOu4RcffSxQluehd
+
