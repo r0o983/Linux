@@ -66,3 +66,15 @@ host -t ns megacorpoe.com 其中-t后面的参数可以修改为任意类型参�
 
 ```
 
+```
+tail -f aaa.log #动态显示日志文件内容
+```
+
+Dhclient -r eth0 清除IP设置
+
+dhclient -v eth0 重新获取IP
+
+Service ssh start 开启ssh systemctl start ssh
+
+Systemctl enable ssh 设置开机启动
+
