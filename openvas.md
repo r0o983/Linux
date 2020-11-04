@@ -34,3 +34,4 @@ vi /usr/bin/openvas-start
 	starting Openvas Manager:openvasmd  
 	starting Openvas Scanner:openvassd  
 	starting Greenbone   
+

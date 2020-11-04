@@ -77,4 +77,3 @@ dhclient -v eth0 重新获取IP
 Service ssh start 开启ssh systemctl start ssh
 
 Systemctl enable ssh 设置开机启动
-
