@@ -670,7 +670,7 @@ docker swarm join-token worker
 
 容器内的命令，细节任务
 
-![image-20210216191350369](C:\Users\Jerry\Desktop\debian.assets\image-20210216191350369.png)
+![image-20210216191350369](\image-20210216191350369.png)
 
 命令>> 管理 >> api >> 调度 >> 工作节点(创建Task容器) >>
 
